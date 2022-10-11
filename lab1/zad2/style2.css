@@ -1,0 +1,60 @@
+.item1{
+  grid-area: top-page;
+  height: 100px;
+}
+.item2{
+  grid-area: main;
+  height: 70px;
+}
+.item3 {
+  grid-area: gallery; 
+  height: 70px;
+}
+.item4 {
+  grid-area: localization;
+  height: 70px;
+  
+}
+.item5 {
+  grid-area: contact;
+  height: 70px;
+}
+.item6 {
+  grid-area: left-column;
+  height: 300px;
+}
+.item7 {
+  grid-area: kys;
+  height: 300px;
+}
+.item8 {
+  grid-area: footer;
+}
+.logo{
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  
+  background: red;
+}
+.grid-container {
+  width: 1500px;
+  display: grid;
+  grid-template-areas:
+    'top-page top-page top-page top-page'
+    'main gallery localization contact'
+    'left-column kys kys kys'
+    'footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  }
+  
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+    
+}

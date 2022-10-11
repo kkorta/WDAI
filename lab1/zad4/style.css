@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+.container{
+    width: 1500px;
+    height: 1000px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.leftTile{
+    margin-left: auto;
+    background-color: red;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: 3px lightgray solid;
+}
+
+.rightTile{
+    margin-right: auto;
+    background-color: aquamarine;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 3px lightgray solid;
+}
+
+.longTile{
+    background-color: yellow;
+    width: 806px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px lightgray solid;
+}
