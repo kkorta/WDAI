@@ -1,0 +1,156 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: yellow;
+}
+
+#accordion{
+    margin-left: 30vw;
+    margin-top: 25vh;
+    border-radius: 9px;
+    width: 40vw;
+    background-color: pink;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+#accordion label + input[type="radio"]{
+    display: none;
+
+}
+
+#accordion .content{
+    padding: 0 0px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s;
+    background-color: rgb(3, 3, 117);
+    display: block;
+    position: relative;
+
+}
+
+
+#accordion label + input[type="radio"]:checked + .content{
+        max-height: 400px;
+
+}
+
+
+.items{
+    border-top: 1px solid #ef584a;
+    overflow: hidden;
+}
+
+
+label{
+    display: block;
+    position: relative;
+}
+label::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid pink;
+    right: 15px;
+    bottom: -10px;
+    z-index: 9;
+}
+
+.last-label::before{
+    display: none;
+}
+:last-child{
+    display: n;
+}
+
+.content a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #394c7f;
+    position: relative;
+    text-decoration: none;
+    
+    
+}
+.content a:before{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.content a:hover::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    left: 0;
+    top:0;
+    opacity: 1;
+
+    border-top: 24px solid transparent;
+    border-left: 11px solid yellow;
+    border-bottom: 24px solid transparent;
+}
+.content a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.content a:hover::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+    border-top: 24px solid transparent;
+    border-right: 11px solid yellow;
+    border-bottom: 24px solid transparent;
+}
+
+
+
+.content a:hover{ 
+    
+    background: linear-gradient(to bottom, rgb(3, 3, 117) 0%,rgb(3, 3, 117) 50%,#91a9e9 51%,#a4b7ec 100%);
+
+    transition: all 0.3s;
+    border-bottom: 1px solid #394c7f;
+}
+.content a:last-child{
+    border:none;
+}
+.items:target .content{
+    max-height: 10em;
+}
