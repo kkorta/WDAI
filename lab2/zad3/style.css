@@ -1,0 +1,140 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+
+.cities{
+    display: flex;
+    margin: 75px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.card-article{
+    display: grid;
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.23), 0px 3px 3px 0px rgba(0, 0, 0, 0.13);
+
+}
+
+.card-text{
+    height: 300px;
+    width: 350px;
+}
+
+.card-description{
+    padding: 15px;
+    margin-top: 0px;
+    text-justify: center;
+    text-align: left;
+}
+.card-img{
+    height: 200px;
+    width: 350px;
+    margin-bottom: 0px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+}
+
+.card-title{
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+
+.btn{
+
+    margin-left: 15px;
+    float: left;
+    padding: 6px;
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 15px;
+    
+}
+.footer{
+    margin: auto;
+
+}
+.icons{
+    margin-left: 50px;
+    width: 175;
+}
+.icons1{
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    
+}
+.icons2{
+    
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif
+    
+}
+h4{
+    
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0px;
+    
+}
+.btn:hover{
+    background-color: rgb(255, 82, 82);
+
+}
+.btn1{
+    width: 175px;
+    margin-right: 150px;
+}
+
+h4:nth-child(2){
+    color: #ea6142;
+}
+.photo-1{
+    background-image: url(images/kraj.jpg);
+}
+
+@media (min-width: 480px) {
+    .cards{ grid-template-columns: repeat(1, 1fr);}
+}
+    
+
+@media (min-width: 940px) {
+    .cards{ grid-template-columns: repeat(2, 1fr);}
+}
+ 
+
+  
+@media (min-width: 1210px) {
+    .cards{ grid-template-columns: repeat(3, 1fr);}
+}
+
+
