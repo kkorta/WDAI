@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --btn-color: #eee;
+}
+body{
+    background-color: wheat;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.card{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+}
+
+.shoe-background{
+    position: relative;
+    width: 50%;
+    height: 475px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    -15px 0 35px rgba(0, 0, 0, 0.1),
+    -15px 0 35px rgba(0, 0, 0, 0.1);
+
+}
+
+.details{
+    background-color: white;
+    width: 50%;
+    z-index: 1;
+    padding: 35px 40px;
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
+    15px 0 35px rgba(0, 0, 0, 0.1),
+    15px 0 35px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.shoe{
+    position: absolute;
+    width: 140%;
+    transform: rotate(-20deg);  
+    top: 15%;
+    left: -40%;
+    opacity: 0;    
+}
+
+.shoe-name{
+    padding: 0 0 10px 0;
+}
+
+
+.shoe-name div{
+    display: flex;
+    align-items: center;
+}
+.shoe-name div .big{
+    
+
+    font-size: 2rem;
+    color: #333;
+}
+
+
+.shoe-name .small{
+    font-weight: 500;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+
+
+.shoe-name, .description, .size-container{
+    border-bottom: 1px solid lightgrey;
+}
+
+.description{
+    padding: 10px 0;
+}
+
+.title{
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #555;
+    padding: 10px 0;
+}
+
+.colors{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+.shoe-name div .new{
+    text-transform: uppercase;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.info{
+    width: 50%;
+    background-color: white;
+    z-index: 1;
+    padding: 35px 40px;
+}
+
+
+.logo{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 20px;
+}
+
+
+.share{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+
+.share i{
+    line-height: 50px;
+    color: black;
+}
+.share:hover{
+    transform: scale(1.1);
+}
+
+.nike{
+    position: absolute;
+    top: 85px;
+    left: 1px;
+    font-size: 11rem;
+    text-transform: uppercase;
+    line-height: .9;
+    color: white;
+    opacity: .3;
+   
+}
+.size-container{
+    padding: 10px 0;
+}
+
+.sizes{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  
+  
+}
+
+.size1, .size2, .size3, .size4, .size5{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buy-price{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price h1{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price i {
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+.buy{
+    padding: .7rem 1rem;
+    background-color: aqua;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+
+.buy:hover{
+    transform: scale(1.1);
+}
+#blue:checked{
+    border: 3px white solid;
+}
+#blue:checked ~ .shoe-background{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+  }
+
+#blue:checked ~ .shoe-background .blue{
+    opacity: 1;
+}
+
+#red:checked ~ .shoe-background{
+    background-image: linear-gradient(45deg, rgb(100, 3, 3), rgb(241, 69, 69));
+  }
+
+#red:checked ~ .shoe-background .red{
+    opacity: 1;
+}
+#green:checked ~ .shoe-background{
+    background-image: linear-gradient(45deg, rgb(3, 107, 8), rgb(50, 206, 50));
+  }
+
+#green:checked ~ .shoe-background .green{
+    opacity: 1;
+}
+#orange:checked ~ .shoe-background{
+    background-image: linear-gradient(45deg, rgb(107, 42, 5), rgb(245, 102, 46));
+  }
+
+#orange:checked ~ .shoe-background .orange{
+    opacity: 1;
+}
+#black:checked ~ .shoe-background{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(158, 154, 154));
+  }
+
+#black:checked ~ .shoe-background .black{
+    opacity: 1;
+}
+
+#blue:checked ~ .details .shoe-name div span{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+#red:checked ~ .details .shoe-name div span{
+    background-image: linear-gradient(45deg, rgb(100, 3, 3), rgb(241, 69, 69));
+
+}
+#green:checked ~ .details .shoe-name div span{
+    background-image: linear-gradient(45deg, rgb(3, 107, 8), rgb(50, 206, 50));
+
+}
+#orange:checked ~ .details .shoe-name div span{
+    background-image: linear-gradient(45deg, rgb(107, 42, 5), rgb(245, 102, 46));
+
+}
+#black:checked ~ .details .shoe-name div span{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(158, 154, 154));
+
+}
+
+#blue:checked ~ .details .buy-price .buy{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+
+#red:checked ~ .details .buy-price .buy{
+    background-image: linear-gradient(45deg, rgb(100, 3, 3), rgb(241, 69, 69));
+
+}
+#green:checked ~ .details .buy-price .buy{
+    background-image: linear-gradient(45deg, rgb(3, 107, 8), rgb(50, 206, 50));
+
+}
+#orange:checked ~ .details .buy-price .buy{
+    background-image: linear-gradient(45deg, rgb(107, 42, 5), rgb(245, 102, 46));
+
+}
+#black:checked ~ .details .buy-price .buy{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(158, 154, 154));
+
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+.color-btn div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#blue:checked  + .blue-btn:checked div{
+    border-color: gray;
+    box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+
+
+}
+
+
+
+.color-btn div:hover{
+    transform: scale(1.1);
+}
+
+.size:hover{
+    transform: scale(1.2);
+}
+
+#size1:checked ~ .size1{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+#size2:checked ~ .size2{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+#size3:checked ~ .size3{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+#size4:checked ~ .size4{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+#size5:checked ~ .size5{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+
+}
+
+.blue-btn div{
+    background-image: linear-gradient(45deg, rgb(14, 14, 165), rgb(33, 123, 207));
+}
+.red-btn div{
+    background-image: linear-gradient(45deg, rgb(100, 3, 3), rgb(241, 69, 69));
+}
+
+.green-btn div{
+    background-image: linear-gradient(45deg, rgb(3, 107, 8), rgb(50, 206, 50));
+}
+
+.orange-btn div{
+    background-image: linear-gradient(45deg, rgb(255, 82, 1), rgb(245, 102, 46));
+}
+
+.black-btn div{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(158, 154, 154));
+}
+
+
+@media (max-width: 1070px) {
+    .shoe{
+        width: 135%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card > div{
+        width: 100%;
+        box-shadow: none;
+    }
+    .shoe{
+        width: 100%;
+        transform: rotate(-5deg) translateY(-50%);
+        top: 55%;
+        left: 0;
+    }
+}
+
+
