@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.form{
+    width: 80%;
+    height: 100px;
+    background-color: whitesmoke;
+    margin: auto;
+    box-shadow: -2px 5px 31px -16px rgba(66, 68, 90, 1);
+    
+}
+
+
+
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.name{
+    height: 70px;
+    float: left;
+    width: 35%;
+    margin: 10px 10px;
+}
+
+.phone{
+    float: left;
+    width: 35%;
+    margin: 10px 10px;
+}
+
+#add{
+    width: 15%;
+    margin: 28px 10px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form span{
+    font-size: 10px;
+    font-weight: 100;
+    color: gray;
+}
+
+
+li button{
+    position: absolute;
+    top: 23%;
+    right: 4%;
+}
+li{
+    position: relative;
+    height: 100px;
+    width: 80%;
+    background-color: whitesmoke;
+    margin: 20px auto;
+    box-shadow: -2px 5px 31px -16px rgba(66, 68, 90, 1);
+    list-style: none;
+
+
+}
+
+h4{
+    position: absolute;
+    font-size: 14px;
+     
+}
+
+#num{
+    top: 50%;
+    left: 4%;
+    font-weight: 100;
+}
+#name{
+    top: 35%;
+    left: 4%;
+    font-weight: 600;
+}
+
+.iconBtn{
+    background-color: green;
+    border: 3px green solid;
+    border-radius: 3px;
+}
+
+i{
+   
+    color: white;
+    padding: 7px 10px;
+}

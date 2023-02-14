@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/board-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#health{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+#collisionCanvas{
+    opacity: 0;
+}
+
+
+
+#log-in{
+    background-color: white;
+
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30vh;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(212, 211, 211) 4px;
+    border-radius: 10px;
+  
+    
+}
+#name{
+   margin-left: 50px;
+}
+input{
+    width: 200px;
+    position: absolute;
+    margin: 20px 50px;
+}
+
+#play{
+    position: absolute;
+    width: 100px;
+    margin: 100px 100px;
+}
+
+#end{
+    position: absolute;
+    right: 42%;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(212, 211, 211) 4px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+#highscores{
+    height: 400px;
+    background-color: red;
+    width: 250px;
+    margin: auto;
+    position: absolute;
+}
+#restart{
+    position: absolute;
+    width: 100px;
+    bottom: 2%;
+}
+
+

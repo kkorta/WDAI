@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    padding-top: 10px;
+    width: 90vw;
+    background-color: beige;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+ul{
+    margin: auto;
+}
+
+p{
+    margin: auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+#a, #b, #c, #d, #e, #f, #g{
+    margin-top: 50px;
+    height: 200px;
+    width: 90vw;
+    overflow-y: scroll;
+    text-align: justify;
+}
+
